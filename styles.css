@@ -62,3 +62,30 @@ h1 {
 #blog a:hover {
     text-decoration: underline;
 }
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    #resume h2, #blog h2 {
+        font-size: 1.2em;
+    }
+
+    #resume dd {
+        margin-left: 10px;
+    }
+
+    #blog li {
+        margin: 5px 0;
+    }
+
+    #blog {
+        padding-bottom: 10px; /* Add extra padding at the bottom for negative space */
+    }
+}
