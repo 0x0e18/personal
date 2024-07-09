@@ -1,0 +1,64 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+    background-color: #fff;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+#bio, #resume, #blog {
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+#bio p, #resume dl, #blog p, #blog ul {
+    margin: 0;
+    padding: 0;
+}
+
+#resume h2, #blog h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#resume dl {
+    margin-top: 10px;
+}
+
+#resume dt {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#resume dd {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+#blog ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#blog li {
+    margin: 10px 0;
+}
+
+#blog a {
+    color: #000;
+    text-decoration: none;
+}
+
+#blog a:hover {
+    text-decoration: underline;
+}
