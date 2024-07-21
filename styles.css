@@ -16,17 +16,17 @@ h1 {
     margin: 0;
 }
 
-#bio, #resume, #blog {
+#bio, #resume, #blog, #projects {
     text-align: left;
     padding-bottom: 20px;
 }
 
-#bio p, #resume dl, #blog p, #blog ul {
+#bio p, #resume dl, #blog p, #blog ul, #projects p, #projects ul {
     margin: 0;
     padding: 0;
 }
 
-#resume h2, #blog h2 {
+#resume h2, #blog h2, #projects h2 {
     font-size: 1.5em;
     margin-bottom: 10px;
 }
@@ -45,22 +45,28 @@ h1 {
     margin-bottom: 10px;
 }
 
-#blog ul {
+#blog ul, #projects ul {
     list-style-type: none;
     padding: 0;
 }
 
-#blog li {
+#blog li, #projects li {
     margin: 10px 0;
 }
 
-#blog a {
+#blog a, #projects a {
     color: #000;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
-#blog a:hover {
+#blog a:hover, #projects a:hover {
     text-decoration: underline;
+}
+
+.project-description {
+    margin-left: 20px;
+    font-size: 0.9em;
+    color: #555;
 }
 
 /* Responsive Design */
@@ -73,7 +79,7 @@ h1 {
         font-size: 1.5em;
     }
 
-    #resume h2, #blog h2 {
+    #resume h2, #blog h2, #projects h2 {
         font-size: 1.2em;
     }
 
@@ -81,11 +87,11 @@ h1 {
         margin-left: 10px;
     }
 
-    #blog li {
+    #blog li, #projects li {
         margin: 5px 0;
     }
 
-    #blog {
+    #blog, #projects {
         padding-bottom: 10px; /* Add extra padding at the bottom for negative space */
     }
 }
