@@ -28,7 +28,7 @@ h1 {
 
 #resume h2, #blog h2, #projects h2 {
     font-size: 1.5em;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 #resume dl {
@@ -42,7 +42,7 @@ h1 {
 
 #resume dd {
     margin-left: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 #blog ul, #projects ul {
@@ -54,7 +54,7 @@ h1 {
     margin: 10px 0;
 }
 
-#blog a, #projects a {
+#blog a, #projects a, #contact a {
     color: #000;
     text-decoration: underline;
 }
@@ -68,6 +68,22 @@ h1 {
     font-size: 0.9em;
     color: #555;
 }
+
+#contact {
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+#contact h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#contact p {
+    margin: 0;
+    padding-left: 0px;
+}
+
 
 /* Responsive Design */
 @media (max-width: 600px) {
@@ -91,7 +107,7 @@ h1 {
         margin: 5px 0;
     }
 
-    #blog, #projects {
-        padding-bottom: 10px; /* Add extra padding at the bottom for negative space */
+    #contact {
+        padding-bottom: 40px; /* Add extra padding at the bottom for negative space */
     }
 }
