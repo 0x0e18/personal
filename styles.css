@@ -11,6 +11,25 @@ header {
     padding-bottom: 20px;
 }
 
+/* Make the link in the header always black */
+header a {
+    color: #000;
+    text-decoration: none; /* Remove underline if you don't want it */
+}
+
+header a:hover {
+    text-decoration: underline; /* Optional: Add underline on hover */
+}
+
+header a:visited {
+    color: #000; /* Ensure visited links stay black */
+}
+
+header a:active {
+    color: #000; /* Ensure active links stay black */
+}
+
+
 h1 {
     font-size: 2em;
     margin: 0;
@@ -41,7 +60,7 @@ h1 {
 }
 
 #resume dd {
-    margin-left: 20px;
+    margin-left: 0px;
     margin-bottom: 0px;
 }
 
@@ -82,6 +101,56 @@ h1 {
 #contact p {
     margin: 0;
     padding-left: 0px;
+}
+
+/* Center the header only on blog post pages */
+.blog-post header {
+    text-align: center;
+    padding-bottom: 20px; /* Add space below the header */
+}
+
+/* Blog post container styling */
+.post-container {
+    max-width: 700px;  /* Set a max-width for comfortable reading */
+    margin: 0 auto;    /* Center the blog content */
+    padding: 20px;     /* Add some padding around the text */
+    line-height: 1.8;  /* Improve readability by increasing line spacing */
+    text-align: left;  /* Keep the text left-aligned within the centered container */
+}
+
+/* Ensure images and other content inside the blog post fit within the container */
+.post-container img, 
+.post-container video {
+    max-width: 100%;   /* Make sure images or videos don't overflow the container */
+    height: auto;
+}
+
+/* Adjust paragraph and header spacing for better readability */
+.post-container h2, 
+.post-container p {
+    margin-bottom: 20px;  /* Add space between paragraphs and headers */
+}
+
+footer {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+footer a {
+    color: #000;
+    text-decoration: none; /* Remove underline if you don't want it */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Optional: Add underline on hover */
+}
+
+footer a:visited {
+    color: #000; /* Ensure visited links stay black */
+}
+
+footer a:active {
+    color: #000; /* Ensure active links stay black */
 }
 
 
