@@ -153,6 +153,54 @@ footer a:active {
     color: #000; /* Ensure active links stay black */
 }
 
+/* Subscription form container */
+.subscribe-container {
+    max-width: 700px;    /* Match the post container width */
+    margin: 40px auto 60px auto;   /* Adjust spacing above and below */
+    text-align: center;  /* Center the form elements */
+}
+
+/* Style for the label */
+.subscribe-container label {
+    display: block;
+    font-size: 1.15em;     /* Slightly increase font size */
+    margin-bottom: 10px;
+    color: #000;
+}
+
+/* Group input and submit button in one line, centered */
+.form-group {
+    display: inline-flex;  /* Keep inputs together and center them */
+    gap: 10px;             /* Spacing between the email input and the button */
+    justify-content: center;
+    align-items: center;   /* Ensure button and input are vertically aligned */
+}
+
+/* Style for the email input field */
+.subscribe-container input[type="email"] {
+    padding: 10px;              /* Increase padding slightly for balance */
+    font-size: 1em;
+    border: 1px solid #000;      /* Simple black border */
+    width: 50%;                 /* Reduce width slightly for better balance */
+    max-width: 300px;            /* Prevent it from becoming too large */
+    box-sizing: border-box;      /* Ensures padding is included in width */
+}
+
+/* Style for the submit button */
+.subscribe-container input[type="submit"] {
+    padding: 10px 20px;          /* Adjust padding for visual balance */
+    font-size: 1em;
+    border: 1px solid #000;
+    background-color: #fff;      /* No background color */
+    color: #000;
+    cursor: pointer;
+}
+
+.subscribe-container input[type="submit"]:hover {
+    background-color: #f0f0f0;  /* Subtle hover effect */
+}
+
+
 
 /* Responsive Design */
 @media (max-width: 600px) {
