@@ -29,25 +29,26 @@ header a:active {
     color: #000; /* Ensure active links stay black */
 }
 
-
 h1 {
     font-size: 2em;
     margin: 0;
 }
 
-#bio, #resume, #blog, #projects {
+/* Ensure consistent padding-bottom for all index sections */
+#bio, #resume, #blog, #projects, #photos, #contact {
     text-align: left;
-    padding-bottom: 20px;
+    padding-bottom: 20px; /* Consistent bottom padding across all sections */
 }
 
-#bio p, #resume dl, #blog p, #blog ul, #projects p, #projects ul {
+/* Consistent h2 styling across all sections */
+#resume h2, #blog h2, #projects h2, #photos h2, #contact h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px; /* Consistent margin-bottom for section headers */
+}
+
+#bio p, #resume dl, #blog p, #blog ul, #projects p, #projects ul, #photos p, #photos ul {
     margin: 0;
     padding: 0;
-}
-
-#resume h2, #blog h2, #projects h2 {
-    font-size: 1.5em;
-    margin-bottom: 15px;
 }
 
 #resume dl {
@@ -60,25 +61,27 @@ h1 {
 }
 
 #resume dd {
-    margin-left: 0px;
-    margin-bottom: 0px;
+    margin-left: 0;
+    margin-bottom: 0;
 }
 
-#blog ul, #projects ul {
-    list-style-type: none;
+/* Ensure ul lists (for blog, projects, photos) are styled consistently */
+#blog ul, #projects ul, #photos ul {
+    list-style-type: none; /* Remove bullet points */
     padding: 0;
 }
 
-#blog li, #projects li {
-    margin: 10px 0;
+#blog li, #projects li, #photos li {
+    margin: 10px 0; /* Consistent spacing between list items */
 }
 
-#blog a, #projects a, #contact a {
+/* Ensure link styling is consistent */
+#blog a, #projects a, #photos a, #contact a {
     color: #000;
     text-decoration: underline;
 }
 
-#blog a:hover, #projects a:hover {
+#blog a:hover, #projects a:hover, #photos a:hover {
     text-decoration: underline;
 }
 
@@ -88,19 +91,9 @@ h1 {
     color: #555;
 }
 
-#contact {
-    text-align: left;
-    padding-bottom: 20px;
-}
-
-#contact h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
 #contact p {
     margin: 0;
-    padding-left: 0px;
+    padding-left: 0;
 }
 
 /* Center the header only on blog post pages */
@@ -130,6 +123,48 @@ h1 {
 .post-container p {
     margin-bottom: 20px;  /* Add space between paragraphs and headers */
 }
+
+/* Center the header on photo gallery pages */
+.photo-gallery header {
+    text-align: center;
+    padding-bottom: 20px; /* Add space below the header */
+}
+
+/* Photo Gallery Container */
+.gallery-container {
+    max-width: 70%; /* Set the width to 70% of the page */
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; /* Center the gallery */
+}
+
+.gallery-container h2 {
+    font-size: 1.8em;
+    margin-bottom: 40px; /* Increased margin-bottom for more space */
+}
+
+/* Individual Photo Item */
+.photo-item {
+    margin-bottom: 40px;
+    padding: 0 10px; /* Add some padding for visual spacing */
+}
+
+/* Style for images to keep them responsive */
+.photo-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Optional: Caption styling */
+.caption {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 10px;
+    text-align: center; /* Center the captions */
+}
+
 
 footer {
     text-align: center;

@@ -38,16 +38,17 @@
          </article>
       </section>
       <section id="newsletter-subscribe" class="subscribe-container">
-        <form action="/subscribe" method="POST">
-          <label for="email">Subscribe for more posts like this one:</label>
-          <div class="form-group">
-            <input type="email" id="email" name="email" placeholder="Your email" required>
-            <input type="submit" value="Subscribe">
-          </div>
-        </form>
-      </section>
-      
-      
+         <form id="subscribeForm" method="POST">
+           <label for="email" id="form-label">Sign up to get notified of new posts:</label>
+           <div class="form-group">
+             <input type="email" id="email" name="email" placeholder="Your email" required>
+             <input type="submit" value="Subscribe">
+           </div>
+         </form>
+         <div id="message"></div> <!-- This div will display the success or error message -->                   
+       </section>
+       <!-- Move this to the bottom, just before the closing </body> tag -->
+       <script src="subscribe.js"></script>
     
       <footer>
          <p><a href="index.html">Back to Homepage</a></p>
